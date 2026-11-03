@@ -1,0 +1,332 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shine Babu | Personal Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fc;
+            color: #222;
+        }
+
+        /* Navigation */
+        nav {
+            background: #111827;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+        }
+
+        nav h2 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #172554, #2563eb);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .hero span {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #38bdf8;
+            color: #111827;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        /* Common Sections */
+        section {
+            padding: 65px 10%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 35px;
+            color: #172554;
+        }
+
+        /* About */
+        .about {
+            text-align: center;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        /* Skills */
+        .skills-container,
+        .projects-container,
+        .cert-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .skill, .project, .cert {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 12px #00000012;
+        }
+
+        .skill {
+            min-width: 150px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .project {
+            width: 280px;
+        }
+
+        .project h3 {
+            color: #2563eb;
+            margin-bottom: 12px;
+        }
+
+        .project p {
+            line-height: 1.6;
+        }
+
+        .cert {
+            width: 250px;
+            text-align: center;
+        }
+
+        /* Education */
+        .education {
+            background: #e8f0ff;
+            text-align: center;
+            line-height: 2;
+        }
+
+        /* Contact */
+        .contact {
+            background: #172554;
+            color: white;
+            text-align: center;
+            line-height: 2;
+        }
+
+        .contact h2 {
+            color: #38bdf8;
+        }
+
+        .contact a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media(max-width: 700px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 5px;
+                font-size: 14px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            section {
+                padding: 45px 5%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h2>Shine.</h2>
+
+        <div>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Home -->
+    <header class="hero" id="home">
+        <h1>Hello, I'm <span>Shine Babu</span></h1>
+        <p>Computer Science Student | Aspiring Software Developer | Data Analyst</p>
+        <a href="#about" class="btn">Explore My Portfolio</a>
+    </header>
+
+    <!-- About -->
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about">
+            <p>
+                I am Shine Babu Kaluvala, a Computer Science and
+                Engineering student at SR University.
+
+                I am passionate about technology, programming,
+                data analysis, and software development.
+
+                I enjoy solving problems, learning new technologies,
+                and building practical projects that create value.
+            </p>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section class="education">
+        <h2 class="section-title">Education</h2>
+
+        <h3>SR University</h3>
+        <p>B.Tech - Computer Science and Engineering</p>
+        <p>Currently pursuing undergraduate studies</p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2 class="section-title">Technical Skills</h2>
+
+        <div class="skills-container">
+            <div class="skill">C Programming</div>
+            <div class="skill">Python</div>
+            <div class="skill">Java</div>
+            <div class="skill">DSA</div>
+            <div class="skill">HTML & CSS</div>
+            <div class="skill">MS Excel</div>
+            <div class="skill">Data Analysis</div>
+            <div class="skill">Git & GitHub</div>
+            <div class="skill">Machine Learning</div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2 class="section-title">My Projects</h2>
+
+        <div class="projects-container">
+
+            <div class="project">
+                <h3>Expense Tracker</h3>
+                <p>
+                    An application to track daily expenses,
+                    manage budgets, and monitor spending habits.
+                </p>
+            </div>
+
+            <div class="project">
+                <h3>AI Notes Summarizer</h3>
+                <p>
+                    An AI-based application that summarizes
+                    lengthy notes into simple and meaningful content.
+                </p>
+            </div>
+
+            <div class="project">
+                <h3>Weather Application</h3>
+                <p>
+                    A weather application that displays
+                    weather conditions using an API.
+                </p>
+            </div>
+
+            <div class="project">
+                <h3>Student Attendance System</h3>
+                <p>
+                    A system designed to manage student
+                    attendance records efficiently.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Certifications -->
+    <section>
+        <h2 class="section-title">Certifications</h2>
+
+        <div class="cert-container">
+            <div class="cert">IBM UX Fundamentals</div>
+            <div class="cert">Introduction to Git and GitHub</div>
+            <div class="cert">Prompt Engineering</div>
+            <div class="cert">Fundamentals of Machine Learning</div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+
+        <p>Let's connect and build something amazing!</p>
+
+        <p>Email: your-email@example.com</p>
+        <p>GitHub: <a href="https://github.com/SHINE51278">
+            Visit My GitHub
+        </a></p>
+
+        <p>LinkedIn: Add Your LinkedIn Profile</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Shine Babu. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
